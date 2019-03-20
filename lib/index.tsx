@@ -1,1 +1,3 @@
-console.log('hello world');
+const div: HTMLDivElement = document.createElement('div');
+div.innerText = 'hello';
+document.body.append(div);
