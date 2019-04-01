@@ -6,7 +6,7 @@ module.exports = {
 
   collectCoverage: false,
 
-  reporters: ["default", "jest-junit"],
+  reporters: ["default"],
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
   moduleDirectories: ['node_modules'],
   globals: {
