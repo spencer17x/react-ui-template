@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xuzpeng/react-wheels-test.git"
+    "url": "git+https://github.com/xuzpeng/rui-temp.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xuzpeng/react-wheels-test/issues"
+    "url": "https://github.com/xuzpeng/rui-temp/issues"
   },
-  "homepage": "https://github.com/xuzpeng/react-wheels-test#readme",
+  "homepage": "https://github.com/xuzpeng/rui-temp#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
