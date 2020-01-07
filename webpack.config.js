@@ -9,7 +9,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist/lib'),
-    library: 'PUI',
+    library: 'rui-temp',
     libraryTarget: 'umd'
   },
   module: {
