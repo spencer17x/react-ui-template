@@ -1,6 +1,7 @@
 const dev = require('./webpack.config.dev');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const packageJonName = require('./package.json').name;
 
 module.exports = Object.assign({}, dev, {
 	mode: 'production',
@@ -11,8 +12,8 @@ module.exports = Object.assign({}, dev, {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: './example/public/index.html',
-			title: 'rui-temp',
-			filename: 'rui-temp.html'
+			title: packageJonName,
+			filename: `${packageJonName}.html`
 		})
 	]
 });

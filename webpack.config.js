@@ -1,4 +1,5 @@
 const path = require('path');
+const packageJonName = require('./package.json').name;
 
 module.exports = {
   entry: {
@@ -9,7 +10,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist/lib'),
-    library: 'rui-temp',
+    library: packageJonName,
     libraryTarget: 'umd'
   },
   module: {
@@ -25,7 +26,14 @@ module.exports = {
       {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
-      }
+      },
+			{
+				test: /\.(png|jpg|gif|jpeg)$/,
+				use: {
+					loader: 'file-loader',
+					options: {},
+				}
+			}
     ]
   }
 }
