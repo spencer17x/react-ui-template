@@ -1,7 +1,6 @@
 const path = require('path');
 const { CheckerPlugin } = require('awesome-typescript-loader');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-// const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 
 
 module.exports = {
@@ -56,6 +55,5 @@ module.exports = {
 	plugins: [
 		new CheckerPlugin(),
 		new CleanWebpackPlugin(),
-		// new HardSourceWebpackPlugin()
 	]
 };
