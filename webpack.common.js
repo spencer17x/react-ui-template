@@ -1,7 +1,7 @@
 const path = require('path');
 const { CheckerPlugin } = require('awesome-typescript-loader');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
+// const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 
 
 module.exports = {
@@ -9,7 +9,7 @@ module.exports = {
 	output: {
 		path: path.join(__dirname, '/dist/lib'),
 		filename: 'index.js',
-		library: 'fiora-ui-react',
+		library: 'react-ui-template',
 		libraryTarget: 'umd'
 	},
 	resolve: {
@@ -56,6 +56,6 @@ module.exports = {
 	plugins: [
 		new CheckerPlugin(),
 		new CleanWebpackPlugin(),
-		new HardSourceWebpackPlugin()
+		// new HardSourceWebpackPlugin()
 	]
 };

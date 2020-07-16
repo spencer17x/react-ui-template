@@ -17,7 +17,7 @@ module.exports = merge(common, {
 	//	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: 'fiora-ui-react',
+			title: '',
 			template: './examples/public/index.html'
 		})
 	]

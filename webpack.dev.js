@@ -9,7 +9,7 @@ module.exports = merge(common, {
 	entry: './examples/src/index.tsx',
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: 'fiora-ui-react',
+			title: 'react-ui-template',
 			template: './examples/public/index.html'
 		})
 	],
