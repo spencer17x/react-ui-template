@@ -1,0 +1,61 @@
+.f-input {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #000;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  border-radius: 4px;
+  transition: border-color 500ms;
+
+  &-small {
+    padding: 4px 10px;
+  }
+
+  &-large {
+    padding: 12px 10px;
+  }
+
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #909399;
+    opacity: 1; /* Firefox */
+  }
+
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #909399;
+  }
+
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    color: #909399;
+  }
+
+  &-disabled {
+    cursor: not-allowed;
+    background-color: #f5f5f5;
+  }
+
+  &:not(&-disabled, &-error) {
+    &:hover {
+      transition: border-color 500ms;
+      border-color: #1890ff;
+    }
+    &:focus {
+      transition: box-shadow 500ms;
+      border-color: #1890ff;
+      box-shadow: 0 0 0 2px rgba(24,144,255,.2);
+    }
+  }
+
+  &-error {
+    border-color: #ff4d4f;
+    &:hover {
+      transition: border-color 500ms;
+      border-color: #ff4d4f;
+    }
+    &:focus {
+      transition: box-shadow 500ms;
+      border-color: #ff4d4f;
+      box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+    }
+  }
+}

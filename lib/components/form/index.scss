@@ -1,0 +1,70 @@
+.f-form {
+  &-item {
+    display: flex;
+    margin-bottom: 5px;
+
+    &--label {
+      flex: 0 0 80px;
+      line-height: 34px;
+      margin-right: 20px;
+      padding-bottom: 24px;
+    }
+
+    &--content {
+      flex: 1;
+    }
+
+    &--error {
+      color: #ff4d4f;
+      font-size: 12px;
+      height: 16px;
+      line-height: 16px;
+
+      .error-item {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &-fields--inline {
+    display: flex;
+    flex-wrap: wrap;
+    .f-form-item--inline {
+      margin-right: 20px;
+      .f-form-item--label {
+        padding-bottom: 10px;
+        margin-right: 10px;
+        flex-basis: auto;
+      }
+    }
+  }
+
+  &-fields--vertical {
+    .f-form-item--vertical {
+      display: block;
+
+      > .f-form-item--label {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.error-enter {
+  opacity: 0;
+}
+
+.error-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.error-exit {
+  opacity: 1;
+}
+
+.error-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
